@@ -1,7 +1,7 @@
-const Header = () => {
+const Sidebar = () => {
   return (
     <>
-      Sidebar
+      This is the sidebar content.
     </>
   );
 }

@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      Header
+      This is the navbar.
     </>
   );
 }

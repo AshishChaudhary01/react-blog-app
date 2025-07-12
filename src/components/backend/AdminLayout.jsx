@@ -1,18 +1,17 @@
-import { Outlet } from "react-router";
+import Header from "./Header";
+import Footer from "./Footer";
+import Sidebar from "./Sidebar";
+import Main from "./Main";
 
 const AdminLayout = () => {
   return (
     <>
-      <header>Header</header>
+      <Header />
       <main>
-        <aside>Sidebar</aside>
-        <div class="main-wrapper">
-          <Outlet></Outlet>
-        </div>
+        <Sidebar />
+        <Main />
       </main>
-      <footer>
-        Footer
-      </footer>
+      <Footer />
     </>
   );
 }
