@@ -6,8 +6,8 @@ import Home from './pages/frontend/Home'
 import AboutUs from './pages/frontend/AboutUs'
 import ContactUs from './pages/frontend/ContactUs'
 import Dashboard from './pages/backend/Dashboard'
-import Students from './pages/backend/Students'
-import Settings from './pages/backend/Settings'
+import Blog from './pages/backend/Blog'
+import Setting from './pages/backend/Setting'
 import OurServices from './pages/frontend/OurSevices'
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
           </Route>
           <Route path='/admin' element={<AdminLayout />}>
             <Route path='' element={<Dashboard />}></Route>
-            <Route path='students' element={<Students />}></Route>
-            <Route path='settings' element={<Settings />}></Route>
+            <Route path='blog' element={<Blog />}></Route>
+            <Route path='setting' element={<Setting />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
