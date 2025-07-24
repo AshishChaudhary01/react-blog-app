@@ -6,6 +6,9 @@ const Sidebar = () => {
       <aside class="sidebar">
         <ul>
           <li>
+            <NavLink to={"/admin"}>Dashboard</NavLink>
+          </li>
+          <li>
             <NavLink to={"/admin/blog"}>Blog</NavLink>
           </li>
           <li>
