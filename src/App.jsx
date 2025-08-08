@@ -6,9 +6,11 @@ import Home from './pages/frontend/Home'
 import AboutUs from './pages/frontend/AboutUs'
 import ContactUs from './pages/frontend/ContactUs'
 import Dashboard from './pages/backend/Dashboard'
-import Students from './pages/backend/Students'
-import Settings from './pages/backend/Settings'
+import Students from './pages/backend/User'
+import Settings from './pages/backend/Setting'
 import OurServices from './pages/frontend/OurSevices'
+import Users from './pages/backend/User'
+import Blog from './pages/backend/Blog'
 
 function App() {
 
@@ -24,8 +26,9 @@ function App() {
           </Route>
           <Route path='/admin' element={<AdminLayout />}>
             <Route path='' element={<Dashboard />}></Route>
-            <Route path='students' element={<Students />}></Route>
-            <Route path='settings' element={<Settings />}></Route>
+            <Route path='blog' element={<Blog />}></Route>
+            <Route path='user' element={<Users />}></Route>
+            <Route path='setting' element={<Settings />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
