@@ -12,6 +12,9 @@ const Sidebar = () => {
             <NavLink to={"/admin/blog"}>Blog</NavLink>
           </li>
           <li>
+            <NavLink to={"/admin/user"}>User</NavLink>
+          </li>
+          <li>
             <NavLink to={"/admin/setting"}>Setting</NavLink>
           </li>
           <li>

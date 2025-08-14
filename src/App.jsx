@@ -11,6 +11,8 @@ import Settings from './pages/backend/Setting'
 import OurServices from './pages/frontend/OurSevices'
 import Users from './pages/backend/User'
 import Blog from './pages/backend/Blog'
+import BlogForm from './pages/backend/BlogForm'
+import UserForm from './pages/backend/UserForm'
 
 function App() {
 
@@ -27,7 +29,9 @@ function App() {
           <Route path='/admin' element={<AdminLayout />}>
             <Route path='' element={<Dashboard />}></Route>
             <Route path='blog' element={<Blog />}></Route>
+            <Route path='blog/create' element={<BlogForm />}></Route>
             <Route path='user' element={<Users />}></Route>
+            <Route path='user/create' element={<UserForm />}></Route>
             <Route path='setting' element={<Settings />}></Route>
           </Route>
         </Routes>
